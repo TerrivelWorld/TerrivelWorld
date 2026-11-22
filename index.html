@@ -14,6 +14,7 @@
 <div class="hub" id="hub"></div>
 </main>
 <script src="main/site.js"></script>
+<script>if(typeof TW==='undefined'){document.body.insertAdjacentHTML('beforeend','<p style="font:16px/1.5 sans-serif;max-width:560px;margin:24px auto;padding:16px;border:2px solid #c00;color:#000;background:#fff">Os arquivos da pasta <b>main</b> (estilo.css e site.js) não foram encontrados em <code>main/</code>. Confira se a pasta <b>main</b> está no repositório, ao lado do index.html, com o nome em letras minúsculas.</p>')}</script>
 <script>
 function hub(){const b=TW.lang==='br';
  document.getElementById('hub').innerHTML=TW.MENU.filter(m=>!m.nav).map(m=>{const t=b?m.pt:m.en,d=b?m.dpt:m.den;
